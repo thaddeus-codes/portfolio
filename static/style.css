@@ -7,7 +7,6 @@ body {
   font-size: 1.5rem;
 }
 
-
 p {
   font-size: 1.5rem;
 }
@@ -36,18 +35,17 @@ h1 {
   backdrop-filter: blur(3px);
   z-index: 1;
   height: inherit;
-  color:  #ebfff4
+  color: #ebfff4;
 }
 
 #profile-pic {
-  width: 40vh;
+  max-height: 80%;
   border: 3px solid #ffc2eb;
-  border-radius: 50px;
+  border-radius: 80px;
 }
 
 .header-content {
   margin: 20px;
-  
 }
 
 .menu-btn {
@@ -62,7 +60,7 @@ h1 {
 }
 
 .navbar-toggler {
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 .menu-btn__burger {
@@ -74,8 +72,6 @@ h1 {
   background-color: #ffc2eb;
   outline: none;
 }
-
-
 
 .menu-btn__burger::before,
 .menu-btn__burger::after {
@@ -121,7 +117,7 @@ h1 {
 
 .navbar-light .navbar-nav .nav-link {
   color: #ebfff4;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -200,10 +196,10 @@ img#javascript {
   max-width: 20vw;
 }
 
-img#firebase, img#redux {
+img#firebase,
+img#redux {
   max-width: 15vw;
 }
-
 
 #projects-carousel {
   justify-content: center;
@@ -211,6 +207,10 @@ img#firebase, img#redux {
 }
 
 @media screen and (min-width: 800px) {
+  #profile-pic {
+    margin-left: 20%;
+  }
+
   #projects-content {
     display: flex;
     align-items: center;
@@ -218,7 +218,7 @@ img#firebase, img#redux {
   }
 
   #projects-carousel {
-    width: 50vw
+    width: 50vw;
   }
   #projects-content.section-content {
     display: flex;
@@ -231,7 +231,7 @@ img#firebase, img#redux {
   bottom: 0;
   width: 100%;
   padding: 5px;
-  height: 75px;
+  height: 85px;
   padding-left: 20px;
   display: flex;
   flex-direction: row;
@@ -252,12 +252,11 @@ img#firebase, img#redux {
 
   #header {
     height: 100%;
-
   }
 
   #profile-pic {
-    height: 100%;
-    width: auto;
+    max-width: auto;
+    max-height: 40vh;
     border-radius: 50px;
   }
 
@@ -265,10 +264,4 @@ img#firebase, img#redux {
     display: flex;
     flex-direction: column;
   }
-
-  #profile-pic {
-    width: 80vw;
-    transform: rotate(0)
-  }
 }
-
